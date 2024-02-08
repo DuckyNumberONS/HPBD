@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+
+.mains {
+  color: #fbfaf8;
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.container {
+  position: absolute;
+  perspective: 3000px;
+  max-width: 960px;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+  margin: 50px;
+  border-radius: 5px;
+}
+
+.card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 0 50px #4a4e69;
+  border-radius: 5px;
+}
+
+.image-custom {
+  max-height: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
